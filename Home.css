@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+body{
+    background-color: black;
+    color:white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    position: fixed;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#item-middle{
+    overflow-y: scroll;
+    
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+#item-middle::-webkit-scrollbar{
+    display: none;
+}
+
+/* Grid */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: .9fr 1.2fr .9fr;
+    height: 99vh;
+    width: 99vw;
+}
+
+.grid-item {
+    border-right: 1px solid grey;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/*Letf Sidebar*/
+
+#sidebar{
+    width: 50%;
+    height: 100%;
+    float: right;
+    text-align: left;
+    font-weight: bold;
+}
+
+#sidebar > div:hover{
+    background-color: darkslategray;
+}
+
+#sidebar > div{
+    padding: 15px;
+    border-radius: 30px;
+}
+
+#sidebar > header{
+    padding: 15px;
+    color: white;
+}
+
+#tweetBut{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(29, 155, 240);
+    border-radius: 30px;
+    margin-top: 20px;
+    font-size: large;
+    color: white;
+}
+
+#profilebar{
+    height: 50px;
+    width: 90%;
+    padding: 10px;
+    background-color: black;
+    border-radius: 30px;
+    margin-top: 200px;
+    display : flex;
+    align-items : center;
+    font-size: small;
+}
+#profilebar:hover{
+    background-color: darkslategrey;
+}
+#profilebar > img{
+    height: 100%;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+#profilebar > span {
+    margin-right: 10px;
+}
+
+
+
+/*Right Sidebar*/
+#sidebarRight{
+    width: 60%;
+    height: 100%;
+    float: left;
+    text-align: left;
+}
+.searchbar{
+    height: 50px;
+    width: 80%;
+    background-color: black;
+    color: grey;
+    border-radius: 20px;
+    border: 1px solid black;
+    font-size: large;
+}
+.searchbar:focus{
+    outline: none;
+}
+
+.recomendations{
+    width: 90%;
+    min-height: 500px;
+    margin-top: 50px;
+    border-radius: 30px;
+    border: 1px solid grey;
+    padding: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.recomendations > section{
+    margin-bottom: 30px;
+}
+
+.footerdetails{
+    font-size: small;
+    color: grey;
+    padding: 20px;
+    width: 90%;
+    height: 50px;
+    margin-top: 30px;
+    border-top: 1px solid grey;
+}
+
+
+
+/*Middle Bar*/
+
+.middlebar{
+    font-size: 18px;    
+}
+
+.middlebar > .stickybar{
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+
+.middlebar > .stickybar > header{
+    font-weight: bolder;
+    text-align: left;
+    font-size: larger;
+    margin: 20px;
+}
+
+.middlebar > .stickybar > nav {
+    display: flex;
+    margin-top: 30px;
+    font-weight: bold;
+    border-bottom: 1px solid grey;
+}
+.middlebar > .stickybar > nav > div {
+    width: 49%;
+    padding: 10px;
+}
+
+
+.tweetText{
+    display: flex;
+    margin-top: 20px;
+    padding: 10px;
+}
+.tweetText > img {
+    max-height: 60px;
+    border-radius: 50%;
+}
+.tweetText > textarea{
+    resize: none;
+    width: 90%;
+    background-color: black;
+    color: grey;
+    border: black;
+    padding: 10px;
+    font-size: larger;   
+}
+textarea::-webkit-scrollbar{
+    display: none;
+}
+
+.tweetcontrols{
+    margin-bottom: 20px;
+    color: blue;
+}
+.tweetcontrols > nav {
+    display: flex;
+    padding-top: 20px;
+} 
+
+.tweetcontrols > nav > span{
+    margin: 10px;
+}
+.tweetcontrols > nav > button{
+    margin-left: auto; 
+    order: 2;
+    width: 150px;
+    border-radius: 30px;
+    background-color: rgb(29, 155, 240);
+}
+
+.tweets{
+    border-bottom: 1px solid grey;
+    padding: 30px;
+}
+
+.tweettag{
+    font-size: small;
+    color: grey;
+    text-align: left;
+    padding: 10px;
+}
+
+.tweetheader{
+ display: flex;   
+}
+.tweetheader > img {
+    max-height: 50px;
+    border-radius: 50%;
+    border: 0.5px solid darkslategray;
+}
+.tweetheader > span {
+    margin: 15px;
+}
+
+.tweetContent{
+    margin-top: 20px;
+    text-align: left;
+}
+
+.tweetContent > div > video {
+    border-radius: 30px;
+}
+
+.tweetControl{
+    color: grey;
+    margin-top: 20px;
+}
+
+.tweetControl > nav > span {
+    float: left;
+    width: 16%;
+    font-size: 18;
+    margin: 0;
+}
